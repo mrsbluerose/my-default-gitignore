@@ -61,6 +61,7 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+*.log
 
 ##############################
 ## NetBeans
@@ -78,3 +79,19 @@ nb-configuration.xml
 ##############################
 .vscode/
 .code-workspace
+
+##############################
+## Android Studio
+##############################
+captures/
+.signing/
+/*/build/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.ipr
+*~
+*.swp
+!/gradle/wrapper/gradle-wrapper.jar
+.navigation/
