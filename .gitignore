@@ -117,11 +117,15 @@ captures/
 
 ##############################
 ## macOS ##
-## credit: https://gist.github.com/swifthorseman/ff4ceca68eb5c3dbbd456b073d68e312
+# credit: https://gist.github.com/swifthorseman/ff4ceca68eb5c3dbbd456b073d68e312
+# credit: https://github.com/expressjs/express/blob/master/.gitignore
 ##############################
 *.DS_Store
 .AppleDouble
 .LSOverride
+.DS_Store*
+Icon?
+._*
 
 # Icon must end with two \r
 Icon
@@ -149,6 +153,7 @@ Temporary Items
 ##############################
 ## Node ##
 # credit: https://gist.github.com/swifthorseman/ff4ceca68eb5c3dbbd456b073d68e312
+# credit: https://github.com/expressjs/express/blob/master/.gitignore
 ##############################
 # Logs
 logs
@@ -208,6 +213,12 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
 
 ##############################
 ## Mongo + Mongoose ##
