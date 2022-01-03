@@ -76,9 +76,28 @@ nb-configuration.xml
 
 ##############################
 ## Visual Studio Code
+#additional credit: https://github.com/Automattic/mongoose/blob/master/.gitignore
 ##############################
 .vscode/
 .code-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.key
+
+# Webpack output
+dist
+test/files/main.js
+package-lock.json
+.config*
+
+# Compiled docs
+docs/*.html
+docs/tutorials/*.html
+docs/typescript/*.html
+docs/api/*.html
+index.html
 
 ##############################
 ## Android Studio
@@ -189,3 +208,31 @@ typings/
 
 # dotenv environment variables file
 .env
+
+##############################
+## Mongo + Mongoose ##
+# credit: https://github.com/Automattic/mongoose/blob/master/.gitignore
+##############################
+lib-cov
+*.swp
+*.sw*
+node_modules/
+*.orig
+benchmarks/benchmarks
+benchmarks/benchmarks2
+benchmarks/benchmarks3
+benchmarks/v8.log
+.DS_Store
+docs/*.json
+docs/source/_docs
+tags
+test/triage/*.js
+/.idea
+/inspections
+bin/mongoose.min.js
+coverage
+npm-debug.log
+data/
+.nyc_output/
+
+tools/31*
